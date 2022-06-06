@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".table_Layout">
+
+    <TableLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TableRow android:padding="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Student Enrolment Form"
+                android:layout_span="2"
+                android:gravity="center_horizontal"
+                android:textSize="20dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Student ID :"
+                android:layout_column="0"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/edtStudentId"
+                android:layout_height="wrap_content"
+                android:layout_column="1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:layout_column="0"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="true"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Fee Paid :"
+                android:layout_column="0"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/edtFeePaid"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:text="Add Student"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"/>
+            <Button
+                android:id="@+id/btnCancel"
+                android:text="Cancel"
+                android:layout_height="wrap_content"/>
+         </TableRow>
+
+
+    </TableLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
